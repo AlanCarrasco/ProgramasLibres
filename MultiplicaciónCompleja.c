@@ -4,7 +4,7 @@
 
 /*
 INSTRUCCIONES DE USO DEL PROGRAMA
-- Ingresa comas en lugar de puntos para números con decimales
+- Ingresa comas en lugar de puntos para né·eros con decimales
 
 
 */
@@ -16,15 +16,15 @@ int main()
     char ans;
 
     //lectura de filas y columnas de las matrices
-    printf("Este programa realiza la multiplicación de 2 matrices complejas\n");
+    printf("Este programa realiza la multiplicacié«‡ de 2 matrices complejas\n");
     do{
-    printf("Introduce el número de filas de la primera matriz:\n");
+    printf("Introduce el né·ero de filas de la primera matriz:\n");
     scanf("%d",&filas1);
-    printf("Introduce el número de columnas de la primera matriz:\n");
+    printf("Introduce el né·ero de columnas de la primera matriz:\n");
     scanf("%d",&columnas1);
-    printf("Introduce el número de filas de la segunda matriz:\n");
+    printf("Introduce el né·ero de filas de la segunda matriz:\n");
     scanf("%d",&filas2);
-    printf("Introduce el número de columnas de la segunda matriz:\n");
+    printf("Introduce el né·ero de columnas de la segunda matriz:\n");
     scanf("%d",&columnas2);
     if (columnas1!=filas2)
     {
@@ -37,7 +37,7 @@ int main()
     }
     }while(x==0);
 
-    //Declaración de arreglos
+    //Declaracié«‡ de arreglos
     float reales1[filas1][columnas1];
     float reales2[filas2][columnas2];
     float imaginarios1[filas1][columnas1];
@@ -69,19 +69,19 @@ int main()
         }
     }
 
-    //Impresión de matriz
+    //Impresié«‡ de matriz
     for (int i=0;i<filas1;i++)
     {
         printf("\n");
         for (int j=0;j<columnas1;j++)
         {
-            //¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡FALTA IMPRESIÓN PERFECTA DE NÚMEROS COMPLEJOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+            //ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€FALTA IMPRESIè¦° PERFECTA DE Nè´›EROS COMPLEJOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
 
             printf("%.3f %.3f i",reales1[i][j],imaginarios1[i][j]);
             printf("      ");
         }
     }
-    printf("\n¿Esta es tu matriz? (s/n):\n");
+    printf("\nç¸€sta es tu matriz? (s/n):\n");
     scanf(" %c", &ans);
     }while(ans!='s');
 
@@ -110,23 +110,23 @@ int main()
         }
     }
 
-    //Impresión de matriz
+    //Impresié«‡ de matriz
     for (int i=0;i<filas2;i++)
     {
         printf("\n");
         for (int j=0;j<columnas2;j++)
         {
-            //¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡FALTA IMPRESIÓN PERFECTA DE NÚMEROS COMPLEJOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+            //ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€FALTA IMPRESIè¦° PERFECTA DE Nè´›EROS COMPLEJOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
 
             printf("%.3f %.3f i",reales2[i][j],imaginarios2[i][j]);
             printf("      ");
         }
     }
-    printf("\n¿Esta es tu matriz? (s/n):\n");
+    printf("\nç¸€sta es tu matriz? (s/n):\n");
     scanf(" %c", &ans);
     }while(ans!='s');
 
-    //Declaración de arreglos resultantes
+    //Declaracié«‡ de arreglos resultantes
     float reales_cuadrados[filas1][columnas2];
     float reales1_imaginarios2[filas1][columnas2];
     float reales2_imaginarios1[filas1][columnas2];
